@@ -14,7 +14,7 @@
 	<Container>
 		<div class="flex gap-10 flex-col md:flex-row items-center justify-between md:space-x-10">
 			<div class="space-y-10 w-full md:w-1/2">
-				<h1 class="text-5xl text-primary dark:text-light">Unlock Glasgow's Tech Potential</h1>
+				<h1 class="text-6xl text-primary dark:text-light">Unlock Glasgow's Tech Potential</h1>
 				<div class="text-xl">
 					<p>
 						Building the tech future of the vibrant heart of Scotland, one contribution at a time.
