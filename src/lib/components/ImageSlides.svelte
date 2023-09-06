@@ -1,12 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
+	import slideOne from '$lib/images/slide-1.png';
+	import slideTwo from '$lib/images/slide-2.png';
+	import slideThree from '$lib/images/slide-3.png';
 
-	const carouselPhotos = [
-		'https://picsum.photos/300/200?random=1',
-		'https://picsum.photos/300/200?random=2',
-		'https://picsum.photos/300/200?random=3',
-		'https://picsum.photos/300/200?random=4'
-	];
+	const carouselPhotos = [slideOne, slideTwo, slideThree];
 
 	let firstIndex = 0;
 	let secondIndex = 1;
