@@ -6,6 +6,11 @@
 
 	const onToggleClick = () =>
 		$themeStore.setTheme($themeStore.theme === 'light' ? 'dark' : 'light');
+
+	const navLinks = [
+		{ label: 'About', href: '/' },
+		{ label: 'Sponsors', href: '/' }
+	];
 </script>
 
 <header class="px-2 inset-0 w-full sticky top-[2rem] z-50">
@@ -15,12 +20,13 @@
 		>
 			<a href="/"><LogoIcon /></a>
 			<ul class="flex gap-10">
-				<li>
-					<a href="/">
-						<LinkButton>About</LinkButton>
-					</a>
-				</li>
-				<li><a href="/"><LinkButton>Sponsors</LinkButton></a></li>
+				{#each navLinks as { href, label }}
+					<li>
+						<a {href} class="hover:underline">
+							{label}
+						</a>
+					</li>
+				{/each}
 			</ul>
 			<div class="flex gap-3 items-center">
 				<div
