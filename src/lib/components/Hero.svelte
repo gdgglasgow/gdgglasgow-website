@@ -18,8 +18,9 @@
 				<div class="text-xl">
 					<p>
 						Building the tech future of the vibrant heart of Scotland, one contribution at a time.
+						<br />
+						Join us and help shape the future of tech in Glasgow.
 					</p>
-					<p>Lorem ipsum dolor sit amet.</p>
 				</div>
 				<PrimaryButton>Join our community</PrimaryButton>
 			</div>

@@ -4,9 +4,8 @@
 </script>
 
 <main>
-	<div class="top-section">
+	<div class="bg-cover bg-no-repeat bg-[url('$lib/images/gdg-background.png')]">
 		<Header />
-
 		<Hero />
 	</div>
 </main>
@@ -14,12 +13,5 @@
 <style>
 	div {
 		height: clamp(750px, calc(100vh), 900px);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	@media (min-width: 768px) {
-		.top-section {
-			background: url('$lib/images/gdg-background.png');
-		}
 	}
 </style>
