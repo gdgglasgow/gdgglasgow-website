@@ -16,30 +16,29 @@
 		<div
 			class="flex justify-between container m-auto w-full sm:w-fit gap-10 items-center px-8 py-3 bg-dark/90 dark:bg-stone-50/80 text-white dark:text-dark rounded-xl text-sm min-h-[3rem]"
 		>
-			<a href="/"
-				><span
+			<a href="/" aria-label="Go to the GDG Glasgow homepage">
+				<span
 					class="flex items-center gap-1 text-xl font-semibold text-stone-300 dark:text-stone-500"
-					><LogoIcon /><span>GDG Glasgow</span></span
-				></a
-			>
+					role="img"
+					aria-label="GDG Glasgow logo"
+				>
+					<LogoIcon />
+					<span>GDG Glasgow</span>
+				</span>
+			</a>
 			<ul class="flex gap-10">
 				{#each navLinks as { href, label }}
 					<li>
-						<a {href} class="hover:underline">
-							{label}
-						</a>
+						<a {href} class="hover:underline">{label}</a>
 					</li>
 				{/each}
 			</ul>
 			<div class="flex gap-3 items-center">
-				<div
-					role="button"
+				<button
+					aria-label="Toggle Theme"
 					class="btn--toggle w-4 h-4 rounded-full aspect-square"
-					aria-labelledby="Switch Theme"
 					tabindex="0"
 					on:click={onToggleClick}
-					on:keydown={onToggleClick}
-					on:keypress={onToggleClick}
 				/>
 			</div>
 		</div>

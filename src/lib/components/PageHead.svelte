@@ -38,7 +38,6 @@
 	<meta name="twitter:image" content={image} />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@gdgglasgow" />
-	<!-- safari meta -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 	<meta name="apple-mobile-web-app-title" content="GDG Glasgow" />
