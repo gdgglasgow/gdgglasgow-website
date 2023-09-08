@@ -28,7 +28,7 @@
 	});
 
 	const imageClasses =
-		'absolute transition-opacity duration-1000 w-full h-full object-cover dark:grayscale';
+		'absolute transition-opacity duration-1000 w-full h-full object-cover dark:grayscale-[70%]';
 </script>
 
 <img class={imageClasses} src={carouselPhotos[firstIndex]} alt="" />
