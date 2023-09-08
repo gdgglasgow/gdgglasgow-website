@@ -12,7 +12,7 @@
 
 <section class="py-10">
 	<Container>
-		<div class="flex gap-10 flex-col md:flex-row items-center justify-between md:space-x-10">
+		<div class="flex gap-10 flex-col md:flex-row items-center justify-between md:space-x-4">
 			<div class="space-y-10 w-full md:w-1/2">
 				<h1 class="text-6xl text-primary dark:text-light">Unlock Glasgow's Tech Potential</h1>
 				<div class="text-xl">
