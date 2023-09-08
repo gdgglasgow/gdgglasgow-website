@@ -1,8 +1,6 @@
 <script>
 	import { themeStore } from 'svelte-theme-switch';
 	import LogoIcon from './LogoIcon.svelte';
-	import SecondaryButton from './SecondaryButton.svelte';
-	import LinkButton from './LinkButton.svelte';
 
 	const onToggleClick = () =>
 		$themeStore.setTheme($themeStore.theme === 'light' ? 'dark' : 'light');
@@ -19,7 +17,8 @@
 			class="flex justify-between container m-auto w-full sm:w-fit gap-10 items-center px-8 py-3 bg-dark/90 dark:bg-stone-50/80 text-white dark:text-dark rounded-xl text-sm min-h-[3rem]"
 		>
 			<a href="/"
-				><span class="flex items-center gap-1 text-xl font-semibold"
+				><span
+					class="flex items-center gap-1 text-xl font-semibold text-stone-300 dark:text-stone-500"
 					><LogoIcon /><span>GDG Glasgow</span></span
 				></a
 			>
