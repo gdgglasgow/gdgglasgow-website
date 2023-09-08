@@ -4,7 +4,13 @@
 	import slideTwo from '$lib/images/slide-2.png';
 	import slideThree from '$lib/images/slide-3.png';
 
-	const carouselPhotos = [slideOne, slideTwo, slideThree];
+	const carouselPhotos = [
+		slideOne,
+		slideTwo,
+		slideThree,
+		'src/lib/images/slide-4.png',
+		'src/lib/images/slide-5.png'
+	];
 
 	let firstIndex = 0;
 	let secondIndex = 1;
