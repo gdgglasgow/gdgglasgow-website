@@ -18,7 +18,11 @@
 		<div
 			class="flex justify-between container m-auto w-full sm:w-fit gap-10 items-center px-8 py-3 bg-dark/90 dark:bg-stone-50/80 text-white dark:text-dark rounded-xl text-sm min-h-[3rem]"
 		>
-			<a href="/"><LogoIcon /></a>
+			<a href="/"
+				><span class="flex items-center gap-1 text-xl font-semibold"
+					><LogoIcon /><span>GDG Glasgow</span></span
+				></a
+			>
 			<ul class="flex gap-10">
 				{#each navLinks as { href, label }}
 					<li>
