@@ -1,4 +1,5 @@
 <script>
+	import AboutSection from './AboutSection.svelte';
 	import Header from './Header.svelte';
 	import Hero from './Hero.svelte';
 </script>
@@ -8,6 +9,7 @@
 		<Header />
 		<Hero />
 	</div>
+	<AboutSection />
 </main>
 
 <style>
