@@ -6,8 +6,8 @@
 		$themeStore.setTheme($themeStore.theme === 'light' ? 'dark' : 'light');
 
 	const navLinks = [
-		{ label: 'About', href: '/' },
-		{ label: 'Sponsors', href: '/' }
+		{ label: 'About', href: '/#about', alt: 'About Us Section' },
+		{ label: 'Sponsors', href: '/', alt: 'Sponsors Page' }
 	];
 </script>
 
@@ -27,9 +27,11 @@
 				</span>
 			</a>
 			<ul class="flex gap-10">
-				{#each navLinks as { href, label }}
+				{#each navLinks as { href, label, alt }}
 					<li>
-						<a {href} class="hover:underline">{label}</a>
+						<a {href} class="hover:underline" aria-label={`Go to ${alt}`} title={`Go to ${alt}`}
+							>{label}</a
+						>
 					</li>
 				{/each}
 			</ul>
