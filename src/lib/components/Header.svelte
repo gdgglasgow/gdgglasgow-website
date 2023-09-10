@@ -7,7 +7,11 @@
 
 	const navLinks = [
 		{ label: 'About', href: '/#about', alt: 'About Us Section' },
-		{ label: 'Sponsors', href: '/', alt: 'Sponsors Page' }
+		{
+			label: 'Sponsors',
+			href: 'https://gdg.community.dev/gdg-glasgow/#local-partners',
+			alt: 'Sponsors Page'
+		}
 	];
 </script>
 
