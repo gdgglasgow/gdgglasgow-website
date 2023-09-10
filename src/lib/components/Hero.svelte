@@ -4,10 +4,14 @@
 	import Mail from '$lib/svgIcons/Mail.svelte';
 	import TwitterX from '$lib/svgIcons/TwitterX.svelte';
 	import Youtube from '$lib/svgIcons/Youtube.svelte';
+	import { fly } from 'svelte/transition';
 	import Container from './Container.svelte';
 	import ImageSlides from './ImageSlides.svelte';
 	import LinkButton from './LinkButton.svelte';
 	import PrimaryButton from './PrimaryButton.svelte';
+	import { quintOut } from 'svelte/easing';
+	import ToAnimate from './ToAnimate.svelte';
+	import DownArrow from './DownArrow.svelte';
 
 	const socials = [
 		{
@@ -37,7 +41,10 @@
 	<Container>
 		<div class="flex gap-10 flex-col md:flex-row items-center justify-between md:space-x-4">
 			<div class="space-y-10 w-full md:w-1/2">
-				<h1 class="text-6xl text-primary dark:text-light" aria-level={1}>
+				<h1
+					class="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 dark:text-light"
+					aria-level={1}
+				>
 					Unlock Glasgow's Tech Potential
 				</h1>
 				<div class="text-xl">
@@ -50,12 +57,21 @@
 						<span>Join us and help shape the future of tech in Glasgow.</span>
 					</p>
 				</div>
-				<PrimaryButton>Join our community</PrimaryButton>
+				<a class="block" href="https://gdg.community.dev/gdg-glasgow/">
+					<PrimaryButton>Join our community</PrimaryButton>
+				</a>
 			</div>
 			<div
-				class="relative w-full h-auto rounded-xl overflow-hidden md:w-[24rem] aspect-square md:aspect-[3/4]"
+				class="relative w-full h-auto rounded-xl overflow-hidden md:w-[24rem] min-h-[32rem] aspect-square md:aspect-[3/4] md:ml-auto"
 			>
-				<ImageSlides />
+				<ToAnimate>
+					<div
+						class="w-full h-full rounded-xl overflow-hidden"
+						in:fly={{ y: 50, duration: 500, easing: quintOut }}
+					>
+						<ImageSlides />
+					</div>
+				</ToAnimate>
 			</div>
 		</div>
 		<div class="space-y-3 mt-8 flex-wrap">
@@ -78,5 +94,6 @@
 				{/each}
 			</span>
 		</div>
+		<div class="mt-20 flex items-center justify-center"><DownArrow /></div>
 	</Container>
 </section>

@@ -2,12 +2,10 @@
 	import { onMount } from 'svelte';
 	import slideOne from '$lib/images/slide-1.png';
 	import slideTwo from '$lib/images/slide-2.png';
-	import slideThree from '$lib/images/slide-3.png';
 
 	const carouselPhotos = [
 		slideOne,
 		slideTwo,
-		slideThree,
 		'src/lib/images/slide-4.png',
 		'src/lib/images/slide-5.png'
 	];

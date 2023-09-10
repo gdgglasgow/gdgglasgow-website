@@ -1,17 +1,15 @@
 <script>
+	import AboutSection from './AboutSection.svelte';
 	import Header from './Header.svelte';
 	import Hero from './Hero.svelte';
+	import UpcomingEventSection from './UpcomingEventSection.svelte';
 </script>
 
 <main>
-	<div class="bg-cover bg-no-repeat bg-[url('$lib/images/gdg-background.png')]">
+	<div class="bg-cover bg-no-repeat bg-[url('$lib/images/gdg-background.png')] h-fit">
 		<Header />
 		<Hero />
 	</div>
+	<UpcomingEventSection />
+	<AboutSection />
 </main>
-
-<style>
-	div {
-		height: clamp(750px, calc(100vh), 900px);
-	}
-</style>

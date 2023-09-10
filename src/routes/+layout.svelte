@@ -32,4 +32,7 @@
 	:global(body) {
 		font-family: 'Gdg';
 	}
+	:global(html) {
+		scroll-behavior: smooth;
+	}
 </style>
