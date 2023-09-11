@@ -1,5 +1,6 @@
 <script>
 	import AboutSection from './AboutSection.svelte';
+	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import Hero from './Hero.svelte';
 	import UpcomingEventSection from './UpcomingEventSection.svelte';
@@ -12,4 +13,5 @@
 	</div>
 	<UpcomingEventSection />
 	<AboutSection />
+	<Footer />
 </main>
