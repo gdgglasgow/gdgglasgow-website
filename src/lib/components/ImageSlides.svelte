@@ -22,11 +22,12 @@
 		'absolute transition-opacity duration-1000 w-full h-full object-cover dark:grayscale-[70%]';
 </script>
 
-<img class={imageClasses} src={carouselPhotos[firstIndex]} alt="" />
+<img class={imageClasses} src={carouselPhotos[firstIndex]} alt="" loading="lazy" />
 <img
 	class={imageClasses}
 	src={carouselPhotos[secondIndex]}
 	alt=""
 	class:opacity-100={!showFirst}
 	class:opacity-0={showFirst}
+	loading="lazy"
 />
