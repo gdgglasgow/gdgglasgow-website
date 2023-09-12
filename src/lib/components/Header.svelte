@@ -2,6 +2,10 @@
 	import { themeStore } from 'svelte-theme-switch';
 	import LogoIcon from './LogoIcon.svelte';
 
+	const currntTheme = $themeStore.theme;
+
+	const isDark = currntTheme === 'dark';
+
 	const onToggleClick = () =>
 		$themeStore.setTheme($themeStore.theme === 'light' ? 'dark' : 'light');
 
@@ -15,7 +19,7 @@
 	];
 </script>
 
-<header class="px-2 inset-0 w-full sticky top-[4rem] z-50">
+<header class="px-2 inset-0 w-full md:sticky top-[4rem] z-50">
 	<nav class="container mt-0 mx-auto">
 		<div
 			class="flex flex-col md:flex-row md:justify-between container m-auto w-full sm:w-fit gap-3 md:gap-10 items-center px-8 py-3 bg-dark/90 dark:bg-stone-50/80 text-white dark:text-dark rounded-xl text-sm min-h-[5rem]"
@@ -30,7 +34,7 @@
 					<span>GDG Glasgow</span>
 				</span>
 			</a>
-			<div class="flex gap-8 w-fit m-auto md:mx-0">
+			<div class="flex items-center gap-8 w-fit m-auto md:mx-0">
 				<ul class="flex gap-8 justify-between md:gap-10">
 					{#each navLinks as { href, label, alt }}
 						<li>
@@ -42,9 +46,8 @@
 				</ul>
 				<div class="flex gap-3 items-center">
 					<button
-						aria-label="Toggle Theme"
-						class="btn--toggle w-4 h-4 rounded-full aspect-square"
-						tabindex="0"
+						aria-label={`Switch theme to ${isDark ? 'light' : 'dark'} mode`}
+						class="btn--toggle w-6 h-6 md:w-4 md:h-4 rounded-full aspect-square"
 						on:click={onToggleClick}
 					/>
 				</div>
