@@ -11,15 +11,15 @@
 	import Mail from '$lib/svgIcons/Mail.svelte';
 </script>
 
-<section class="py-10">
+<section class="py-10 mt-4">
 	<Container>
 		<div class="flex gap-10 flex-col md:flex-row items-center justify-between md:space-x-4">
 			<div class="space-y-10 w-full md:w-1/2">
 				<h1
-					class="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 dark:text-light capitalize"
+					class="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 dark:text-light"
 					aria-level={1}
 				>
-					unlock glasgow's tech potential
+					Unlock Glasgow's tech potential.
 				</h1>
 				<div class="text-xl">
 					<p>

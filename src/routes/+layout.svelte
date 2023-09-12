@@ -13,13 +13,15 @@
 		src: url('$lib/fonts/Product Sans Regular.ttf');
 		font-weight: normal;
 		font-style: normal;
+		font-display: swap;
 	}
 
-	@font-face {
+	/* @font-face {
 		font-family: 'Gdg';
 		src: url('$lib/fonts/Product Sans Bold.ttf');
 		font-weight: bold;
 		font-style: normal;
+		font-display: swap;
 	}
 
 	@font-face {
@@ -27,7 +29,8 @@
 		src: url('$lib/fonts/Product Sans Italic.ttf');
 		font-weight: normal;
 		font-style: italic;
-	}
+		font-display: swap;
+	} */
 
 	:global(body) {
 		font-family: 'Gdg', 'sans-serif';
