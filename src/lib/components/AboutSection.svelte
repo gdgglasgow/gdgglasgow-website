@@ -1,4 +1,4 @@
-<section id="about" class="mt-6 md:mt-10">
+<section id="about" class="my-6 md:my-10">
 	<div class="m-auto px-2 md:px-4 py-4 md:py-10 max-w-[1028px]">
 		<h2 class="text-5xl text-primary dark:text-stone-400 text-center">About Us</h2>
 		<div class="text-2xl mt-8">

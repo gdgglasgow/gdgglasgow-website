@@ -6,12 +6,14 @@
 	import UpcomingEventSection from './UpcomingEventSection.svelte';
 </script>
 
+<div
+	class="absolute inset-0 -z-50 w-full h-screen bg-no-repeat bg-[url('$lib/images/gdg-background.png')] bg-cover"
+	aria-hidden="true"
+/>
+<Header />
+<Hero />
 <main>
-	<div class="bg-cover bg-no-repeat bg-[url('$lib/images/gdg-background.png')] h-fit">
-		<Header />
-		<Hero />
-	</div>
 	<UpcomingEventSection />
 	<AboutSection />
-	<Footer />
 </main>
+<Footer />
