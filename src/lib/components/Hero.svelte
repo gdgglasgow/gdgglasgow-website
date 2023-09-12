@@ -1,9 +1,4 @@
 <script>
-	import Instagram from '$lib/svgIcons/Instagram.svelte';
-	import Linkedin from '$lib/svgIcons/Linkedin.svelte';
-	import Mail from '$lib/svgIcons/Mail.svelte';
-	import TwitterX from '$lib/svgIcons/TwitterX.svelte';
-	import Youtube from '$lib/svgIcons/Youtube.svelte';
 	import { fly } from 'svelte/transition';
 	import Container from './Container.svelte';
 	import ImageSlides from './ImageSlides.svelte';
@@ -12,29 +7,8 @@
 	import { quintOut } from 'svelte/easing';
 	import ToAnimate from './ToAnimate.svelte';
 	import DownArrow from './DownArrow.svelte';
-
-	const socials = [
-		{
-			href: 'https://www.instagram.com/gdgglasgow/',
-			icon: Instagram,
-			alt: 'Instagram'
-		},
-		{
-			href: 'https://www.linkedin.com/company/gdg-glasgow/',
-			icon: Linkedin,
-			alt: 'LinkedIn'
-		},
-		{
-			href: 'https://twitter.com/gdgglasgow',
-			icon: TwitterX,
-			alt: 'Twitter'
-		},
-		{
-			href: 'https://www.youtube.com/@gdgglasgow',
-			icon: Youtube,
-			alt: 'YouTube'
-		}
-	];
+	import Socials from './Socials.svelte';
+	import Mail from '$lib/svgIcons/Mail.svelte';
 </script>
 
 <section class="py-10">
@@ -86,13 +60,7 @@
 					</a>
 				</LinkButton>
 			</div>
-			<span class="flex gap-4 items-center">
-				{#each socials as { href, icon, alt }}
-					<a {href} aria-label={alt + ' link'} title="{`Visit our ${alt} page`}}" target="_blank">
-						<svelte:component this={icon} />
-					</a>
-				{/each}
-			</span>
+			<Socials />
 		</div>
 		<div class="mt-20 flex items-center justify-center"><DownArrow /></div>
 	</Container>
