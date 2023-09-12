@@ -3,7 +3,7 @@
 	import { ThemeWrapper } from 'svelte-theme-switch';
 </script>
 
-<ThemeWrapper attribute="class">
+<ThemeWrapper attribute="class" defaultTheme="light">
 	<slot />
 </ThemeWrapper>
 
