@@ -1,14 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import slideOne from '$lib/images/slide-1.png';
-	import slideTwo from '$lib/images/slide-2.png';
 
-	const carouselPhotos = [
-		slideOne,
-		slideTwo,
-		'src/lib/images/slide-4.png',
-		'src/lib/images/slide-5.png'
-	];
+	const carouselPhotos = [0, 1, 2, 3].map((i) => `/images/slide-${i + 1}.png`);
 
 	let firstIndex = 0;
 	let secondIndex = 1;
