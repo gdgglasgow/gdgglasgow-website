@@ -16,10 +16,10 @@
 		<div class="flex gap-10 flex-col md:flex-row items-center justify-between md:space-x-4">
 			<div class="space-y-10 w-full md:w-1/2">
 				<h1
-					class="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 dark:text-light"
+					class="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 dark:text-light capitalize"
 					aria-level={1}
 				>
-					Unlock Glasgow's Tech Potential
+					unlock glasgow's tech potential
 				</h1>
 				<div class="text-xl">
 					<p>
@@ -36,7 +36,7 @@
 				</a>
 			</div>
 			<div
-				class="relative w-full h-auto rounded-xl overflow-hidden md:w-[24rem] min-h-[32rem] aspect-square md:aspect-[3/4] md:ml-auto"
+				class="relative w-full h-auto rounded-xl overflow-hidden md:w-[38.4rem] md:min-h-[51.2rem] aspect-square md:aspect-[3/4] md:ml-auto"
 			>
 				<ToAnimate>
 					<div
@@ -62,6 +62,6 @@
 			</div>
 			<Socials />
 		</div>
-		<div class="mt-20 flex items-center justify-center"><DownArrow /></div>
+		<div class="mt-20 hidden md:flex items-center justify-center"><DownArrow /></div>
 	</Container>
 </section>

@@ -15,10 +15,10 @@
 	];
 </script>
 
-<header class="px-2 inset-0 w-full sticky top-[2rem] z-50">
+<header class="px-2 inset-0 w-full sticky top-[4rem] z-50">
 	<nav class="container mt-0 mx-auto">
 		<div
-			class="flex flex-col md:flex-row md:justify-between container m-auto w-full sm:w-fit gap-3 md:gap-10 items-center px-8 py-3 bg-dark/90 dark:bg-stone-50/80 text-white dark:text-dark rounded-xl text-sm min-h-[3rem]"
+			class="flex flex-col md:flex-row md:justify-between container m-auto w-full sm:w-fit gap-3 md:gap-10 items-center px-8 py-3 bg-dark/90 dark:bg-stone-50/80 text-white dark:text-dark rounded-xl text-sm min-h-[5rem]"
 		>
 			<a href="/" aria-label="Go to the GDG Glasgow homepage">
 				<span

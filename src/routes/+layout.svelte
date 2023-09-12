@@ -30,9 +30,11 @@
 	}
 
 	:global(body) {
-		font-family: 'Gdg';
+		font-family: 'Gdg', 'sans-serif';
+		font-size: 16px;
 	}
 	:global(html) {
+		font-size: 62.5%;
 		scroll-behavior: smooth;
 	}
 </style>
