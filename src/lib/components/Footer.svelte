@@ -1,5 +1,6 @@
 <script lang="ts">
 	import LogoIcon from './LogoIcon.svelte';
+	import Socials from './Socials.svelte';
 	const navLinks = [
 		{ label: 'About', href: '/#about', alt: 'About Us Section' },
 		{
@@ -17,7 +18,7 @@
 
 <footer>
 	<div
-		class="container m-auto px-2 md:px-4 py-10 max-w-[1028px] border-t flex flex-col md:flex-row gap-4 md:gap-10"
+		class="container m-auto px-2 md:px-4 py-10 max-w-[1028px] border-t flex flex-col md:flex-row md:justify-between items-center gap-4 md:gap-10"
 	>
 		<div class="flex items-center gap-2 m-auto md:mx-0">
 			<LogoIcon />
@@ -35,5 +36,6 @@
 				{/each}
 			</ul>
 		</div>
+		<Socials />
 	</div>
 </footer>
