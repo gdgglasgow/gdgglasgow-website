@@ -30,7 +30,7 @@
 	}
 
 	:global(body) {
-		font-family: 'Gdg';
+		font-family: 'Gdg', 'sans-serif';
 	}
 	:global(html) {
 		scroll-behavior: smooth;
