@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="absolute inset-0 -z-50 w-full h-screen bg-no-repeat bg-[url('$lib/images/gdg-background.png')] bg-cover"
+	class="absolute inset-0 -z-50 w-full h-screen bg-no-repeat bg-[url('$lib/images/gdg-background.png')] bg-cover hidden md:block"
 	aria-hidden="true"
 />
 <Header />
