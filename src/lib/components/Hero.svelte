@@ -62,6 +62,6 @@
 			</div>
 			<Socials />
 		</div>
-		<div class="mt-20 flex items-center justify-center"><DownArrow /></div>
+		<div class="mt-20 hidden md:flex items-center justify-center"><DownArrow /></div>
 	</Container>
 </section>
