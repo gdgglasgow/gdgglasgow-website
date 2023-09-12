@@ -1,7 +1,7 @@
 <script>
 	import { draw } from 'svelte/transition';
 	import ToAnimate from './ToAnimate.svelte';
-	import { bounceIn, quintOut } from 'svelte/easing';
+	import { quintOut } from 'svelte/easing';
 </script>
 
 <svg

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import slideOne from '$lib/images/slide-1.png';
 	import slideTwo from '$lib/images/slide-2.png';

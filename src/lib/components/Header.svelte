@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { themeStore } from 'svelte-theme-switch';
 	import LogoIcon from './LogoIcon.svelte';
 
